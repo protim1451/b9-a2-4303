@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     margin: 0px 0px 0px 0px;
-    /* padding: 0px 0px 0px 0px; */
 }
 .btn-primary{
     width: 174px;
@@ -110,4 +109,57 @@ nav li a{
     font-weight: 400;
     text-align:left;
     padding-top: 16px;
+}
+
+
+/* Responsive Style */
+@media screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+    .nav-title{
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    .section-title, .title2{
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .nav-title img{
+        width: 36px;
+        height: 46.008px;
+    }
+    nav>ul{
+        display:none;
+    }
+    .banner{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-size: auto;
+    }
+    .banner-input{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.30);
+        width: fit-content;
+    }
+    .banner-title{
+        padding-top: 10px;
+        font-size: 2.5rem;
+    }
+    .banner-desc{
+        margin-bottom: 10px;
+    }
+    .where, .when, .type{
+        width: 274px;
+        height: 52px;
+    }
+    .btn-primary{
+        width: 274px;
+        height: 52px;
+    }
 }
